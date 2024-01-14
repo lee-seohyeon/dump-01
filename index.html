@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>DUMP!</title>
 		<link rel="stylesheet" href="css/index.css" />
+
+		<script async src="https://tally.so/widgets/embed.js"></script>
 	</head>
 	<body>
 		<div class="imgbox">
@@ -13,9 +14,49 @@
 		</div>
 
 		<div class="cta-button-box">
-			<a class="cta-button" href="https://forms.gle/">
+			<a
+				data-tally-open="wkE091"
+				data-tally-layout="modal"
+				data-tally-hide-title="1"
+				data-tally-emoji-text="👋"
+				data-tally-emoji-animation="wave"
+				class="cta-button"
+				href="https://forms.gle/"
+			>
 				사전예약하기
 			</a>
 		</div>
+
+
+		<div class="tally">
+			<iframe
+				data-tally-src="https://tally.so/embed/wkE091?hideTitle=1&transparentBackground=1"
+				loading="lazy"
+				width="100%"
+				height="500"
+				frameborder="0"
+				marginheight="0"
+				marginwidth="0"
+				title="DUMP! 사전예약"
+			></iframe>
+		</div>
+		<script>
+			var d = document,
+				w = "https://tally.so/widgets/embed.js",
+				v = function () {
+					"undefined" != typeof Tally
+						? Tally.loadEmbeds()
+						: d
+								.querySelectorAll("iframe[data-tally-src]:not([src])")
+								.forEach(function (e) {
+									e.src = e.dataset.tallySrc;
+								});
+				};
+			if ("undefined" != typeof Tally) v();
+			else if (d.querySelector('script[src="' + w + '"]') == null) {
+				var s = d.createElement("script");
+				(s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s);
+			}
+		</script>
 	</body>
 </html>
